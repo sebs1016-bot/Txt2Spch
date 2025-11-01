@@ -6,7 +6,15 @@ import os
 from gtts import gTTS
 from PIL import Image
 import base64
-
+st.markdown("""
+<style>
+.stApp {
+    background: linear-gradient(135deg, #1a0000, #8b0000);
+    color: #f5f5f5;
+    font-family: 'Courier New', monospace;
+}
+</style>
+""", unsafe_allow_html=True)
 st.title("Conversión de Texto a Audio")
 image = Image.open('gato_raton.png')
 st.image(image, width=350)
@@ -19,13 +27,12 @@ try:
 except:
     pass
 
-st.subheader("Una pequeña Fábula.")
-st.write('¡Ay! -dijo el ratón-. El mundo se hace cada día más pequeño. Al principio era tan grande que le tenía miedo. '  
-         ' Corría y corría y por cierto que me alegraba ver esos muros, a diestra y siniestra, en la distancia. ' 
-         ' Pero esas paredes se estrechan tan rápido que me encuentro en el último cuarto y ahí en el rincón está '  
-         ' la trampa sobre la cual debo pasar. Todo lo que debes hacer es cambiar de rumbo dijo el gato...y se lo comió. ' 
+st.subheader("OldBoy")
+st.write('"Oldboy" (2003), dirigida por Park Chan-wook, es un intenso thriller surcoreano que sigue la historia de Oh '  
+         ' Dae-su, un hombre que es secuestrado y encerrado en una celda durante 15 años sin saber por qué. De ' 
+         ' repente, es liberado y se embarca en una búsqueda desesperada de venganza, descubriendo secretos'  
+         ' oscuros y giros inesperados que desafían su percepción de la realidad y la justicia. ' 
          '  '
-         ' Franz Kafka.'
         
         )
            
